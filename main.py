@@ -39,7 +39,9 @@ for subreddit_name in subreddits:
             if body.startswith('f') and body.endswith('f') and len(body) == 1:
                 respect += comment.score
 
-        reply = f'Total Respect: {respect} \nSource Code: https://github.com/goktug97/RespectCounterBot\n'
+        reply = f"Total Respect: {respect} \n\n"
+        reply = f"{reply}I'm just a simple bot trying to make my way in the universe.\n\n"
+        reply = f"{reply}^Source ^Code: ^https://github.com/goktug97/RespectCounterBot\n"
         while True:
             try:
                 if respect > 10 and respect != old_respect:
