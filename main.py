@@ -7,12 +7,32 @@ import sys
 import praw
 
 reddit = praw.Reddit('respectcounterbot')
-subreddits = ['respectbottest',
-              'murderedbywords',
-              'suicidebywords',
-              'memes',
-              'me_irl',
-              'funny']
+subreddits = [
+    '2meirl4meirl',
+    'donthelpjustfilm',
+    'garlicbreadmemes',
+    'gifs',
+    'greentext',
+    'gifsthatkeepongiving',
+    'hitanimals',
+    'holdmyfeedingtube',
+    'instantkarma',
+    'justfuckmyshitup',
+    'prequelmemes',
+    'nononono',
+    'rareinsults',
+    'trebuchetmemes',
+    'unexpected',
+    'watchpeopledieinside',
+    'wellthatsucks',
+    'whatcouldgowrong',
+    'programmerhumor',
+    'respectbottest',
+    'murderedbywords',
+    'suicidebywords',
+    'memes',
+    'me_irl',
+    'funny']
 
 for subreddit_name in subreddits:
     subreddit = reddit.subreddit(subreddit_name)
