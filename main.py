@@ -25,13 +25,12 @@ for subreddit_name in subreddits:
             if (author:=comment.author) is not None:
                 author_name = author.name
                 if 'RespectCounterBot'== author_name:
-                    print(author_name)
                     bot_comment = comment
                     try:
                         old_respect = int(bot_comment.body.split(' ')[2])
                     except IndexError:
-                        pass
                         # This should never happen
+                        pass
                     break
         respect = 0
         for comment in comments.list() :
