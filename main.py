@@ -24,7 +24,6 @@ subreddits = [
     'trebuchetmemes',
     'unexpected',
     'watchpeopledieinside',
-    'wellthatsucks',
     'whatcouldgowrong',
     'programmerhumor',
     'respectbottest',
@@ -43,8 +42,8 @@ for subreddit_name in subreddits:
         old_respect = 0
         for comment in comments:
             if (author:=comment.author) is not None:
-                author_name = author.name
-                if 'RespectCounterBot'== author_name:
+                author_id = author.id
+                if '55czfio0' == author_id:
                     bot_comment = comment
                     try:
                         old_respect = int(bot_comment.body.split(' ')[2])
